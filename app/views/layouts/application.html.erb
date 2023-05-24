@@ -23,7 +23,16 @@
             <ul class="navbar-nav ml-auto">
             <% if user_signed_in? %>
               <li class="nav-item">
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'nav-link text-white' %>
+                <%= link_to root_path, class: 'nav-link text-white' do %>
+                  <i class="fas fa-home" style="color: #ffffff;"></i>
+                  Home
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link text-white' do %>
+                  <i class="fas fa-sign-out-alt" style="color: #ffffff;"></i>
+                  Log out
+                <% end %>
               </li>
             <% else %>
               <li class="nav-item">
