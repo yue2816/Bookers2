@@ -29,6 +29,18 @@
                 <% end %>
               </li>
               <li class="nav-item">
+                <%= link_to users_path, class: 'nav-link text-white' do %>
+                  <i class="fas fa-users" style="color: #ffffff;"></i>
+                  Users
+                <% end %>
+              </li>
+              <li class="nav-item">
+                <%= link_to books_path, class: 'nav-link text-white' do %>
+                  <i class="fas fa-book-open" style="color: #ffffff;"></i>
+                  Books
+                <% end %>
+              </li>
+              <li class="nav-item">
                 <%= link_to destroy_user_session_path, method: :delete, class: 'nav-link text-white' do %>
                   <i class="fas fa-sign-out-alt" style="color: #ffffff;"></i>
                   Log out
