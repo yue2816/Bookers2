@@ -8,10 +8,10 @@
           <th>name</th><td><%= @books.user.name %></td>
         </tr>
         <tr>
-          <th>introduction</th><td><%= @books.user.self_introduction %></td>
+          <th>introduction</th><td><%= @books.user.introduction %></td>
         </tr>
       </table>
-      
+
       <%= link_to edit_user_path(@books.user.id), class:'btn btn-outline-secondary btn-block' do %>
         <i class="fas fa-user-cog"></i>
       <% end %>
