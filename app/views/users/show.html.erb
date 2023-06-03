@@ -2,16 +2,16 @@
   <div class="row">
     <div class="col-md-3">
       <h2>User info</h2>
-      <%= image_tag current_user.get_profile_image(100,100) %>
+      <%= image_tag @user.get_profile_image(100,100) %>
       <table class="table">
         <tr>
-          <th>name</th><td><%= current_user.name %></td>
+          <th>name</th><td><%= @user.name %></td>
         </tr>
         <tr>
-          <th>introduction</th><td><%= current_user.introduction %></td>
+          <th>introduction</th><td><%= @user.introduction %></td>
         </tr>
       </table>
-      <%= link_to edit_user_path(current_user.id), class:'btn btn-outline-secondary btn-block' do %>
+      <%= link_to edit_user_path(@user.id), class:'btn btn-outline-secondary btn-block' do %>
         <i class="fas fa-user-cog"></i>
       <% end %>
 
